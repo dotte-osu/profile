@@ -1,0 +1,100 @@
+html, body {
+  font-family: 'Baloo Paaji', cursive;
+  height: 100%;
+  
+}
+
+/* for landing effect */
+#start{
+  background: #000000;
+  display: flex;
+  position: fixed;
+  top: 0;
+	left: 0;
+  height: 100%;
+	width: 100%;
+  z-index: 9000;
+	justify-content: center;
+	align-items: center;
+}
+#startcontainer{
+  width: 550px;
+  height: 220px;
+  position: relative;
+}
+
+.starttitle{
+  font-size: 75px;
+  text-transform: uppercase;
+}
+
+.starttitle span{
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function:ease;
+  animation-duration: 3s;
+}
+#title1 span{
+  animation-delay: 0.6s;
+}
+
+#title1 span:first-child{
+  animation-delay: 0.7s;
+}
+
+#title1 span:nth-child(3){
+  color: rgb(255, 20, 147);
+  animation-delay: 0.5s;
+}
+
+#title2{ 
+  top: 0;
+  position: absolute;
+}
+
+#title2 span{
+  animation-delay: 4.1s;
+}
+
+#title2 span:first-child{
+  animation-delay: 4.2s;
+}
+
+#title2 span:last-child{
+  color: rgb(255, 20, 147);
+  animation-delay: 4s;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY */
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-400px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  40% {
+    transform: translateY(50);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+  }
+}

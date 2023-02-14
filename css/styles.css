@@ -1,0 +1,511 @@
+.wrapper {
+  transition: background-color 1.0s ease;
+  font-size: 25px;
+}
+
+/* right navbar */
+#sidenav {
+  height: 100%; 
+  width:250px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: rgb(255, 20, 147);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#sidenav ul{
+  list-style-type: none;
+}
+#sidenav a {
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(57,62,70);
+  transition: color 1.0s ease;
+}
+#sidenav a.active {
+  background-color: #f1f1f1;
+}
+
+/* left contact bar */
+#contactinfo{
+  height: 100%; 
+  width: 250px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: rgb(255, 20, 147);
+  overflow-x: hidden; 
+  padding: 15px;
+  color: rgb(57,62,70);
+}
+
+#contactinfo i{
+  font-size: 20px;
+  padding: 10px ;
+  text-decoration: none;
+}
+#contactinfo a{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(57,62,70);
+}
+#contactinfo a:hover {
+  color: #f1f1f1;
+}
+.phoneemail{
+  width:100%;
+}
+
+
+/* side bar color change */
+.colorchange{
+  width:100%;
+  padding:10px;
+}
+
+
+/* for main */
+#main {
+  width:100%;
+  overflow:hidden;
+}
+.section{
+  margin-left: 250px;
+  margin-right: 250px;
+  text-align: center; 
+  padding:10px;
+}
+.title{
+  transition: color 1.0s ease;
+  color:rgb(255, 20, 147);
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 30px;
+}
+.sectionsubtitle{
+  font-family: 'Baloo Paaji', cursive;
+  font-size: 45px;
+  font-weight: bold;
+  color:rgb(57,62,70);
+  padding:30px;
+}
+
+/* for about me section */
+#img-aboutme{
+  border-radius: 100px;
+  width: 300px;
+}
+#aboutme p {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  margin: 15px 15px 30px 15px;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+ /* for skills section */
+.language{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color:rgb(57,62,70);
+}
+.language img {
+  margin: 0px 20px;
+  width: 120px;
+}
+
+.project-display{
+  display:flex;
+  flex-wrap: wrap;
+  margin:10px 0px 30px 0px;
+  justify-content: center;
+  }
+
+.projectfadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+}
+.project-img{
+  width:350px;
+  height: 230px;
+}
+.projectfadein {
+  width:350px;
+  height: 230px;
+  margin:20px;
+	overflow:		hidden;
+	position:		relative;	
+}
+.projectfadein .caption {
+	font-size:		130%;
+	text-align: 		center;
+	color:			#fff;
+  margin-top: 50px;
+}
+.projectfadein .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	
+	top:			0;
+	left:			0;
+	opacity:		0;	
+	background-color:	rgba(0,0,0,0.7);	
+	-webkit-transition:	all 0.5s ease;
+	transition:		all 0.5s ease;
+}
+.projectfadein:hover .mask {
+	opacity:		1;	
+  text-decoration: none;
+}
+
+.projectfadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}  
+.timelinecontainer{
+  padding-bottom: 35px;
+  margin: 20px;
+}
+.timeline {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+  position: relative;
+  text-align: left;
+}
+
+  .timeline:before {
+   	content:"";
+  	width: 3px;
+  	height: 115%;
+  	background: rgb(238, 236, 236);
+  	left: 0;
+  	top: 0;
+    position: absolute;
+    margin-left: 24px;
+  }
+  .timeline-last:before {
+    content:"";
+  	height: 0;
+  }
+  .timeline:after { 
+    background-color: rgb(238, 236, 236);
+    font-family: "Font Awesome 5 Brands"; 
+    font-weight: 900;
+    font-size: 30px;
+    color:rgb(85, 88, 92);
+    content: "\f2c5";
+    display: inline-block;
+    text-align:center;
+		width: 50px;
+		height: 50px;
+    line-height:50px;
+		position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    margin-left: 0px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);;
+  }
+  .freelance:after {    
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 30px;
+    content: "\f0b1";
+    
+  }
+  .bank:after { 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 30px;
+    content: "\f19c";
+	}
+.legitscript:after { 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 30px;
+    content: "\f5b1";
+	}
+.nissin:after { 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 30px;
+    content: "\f2db";
+	}
+  .timeline.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    transition : all 500ms;
+} 
+.timelinecard {
+	position: relative;
+	background-color: rgb(238, 236, 236);
+  border-radius: 5px;
+  height: auto;
+  margin: 0px 10px 15px 65px;
+  padding:5px;
+  line-height: 1.5;
+  -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+.timelinecard:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 35%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: rgb(238, 236, 236);
+	border-left: 0;
+	margin-top: -18px;
+	margin-left: -10px;
+}
+.cardtitle{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(57,62,70);
+  padding-right: 5px;
+  margin: 10px 0px 0px 20px;
+}
+.carddiscription{
+  font-family: 'Open Sans', sans-serif;  
+  padding: 10px;
+  margin: 0px 5px 5px 10px;
+}
+/* contact info for small screen */
+
+/* hide contact when screen is wide */
+@media only screen and (min-width: 1200px) {
+.contactinfo2 {
+  display:none;
+  }
+}
+
+/* for narrow screen */
+@media only screen and (max-width: 1200px) {
+  .starttitle{
+  font-size: 65px;
+  }
+
+  #sidenav {
+    overflow: hidden;
+    background-color:  rgb(255, 20, 147);
+    height: 50px;
+    width: 100%;
+    padding-top: 0px;
+  }
+  #sidenav a {
+    float: left;
+    color: rgb(57,62,70);
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 30px 30px 0;
+    font-size: 17px;
+    font-weight:bold;
+  }
+
+  #sidenav a.active {
+    background-color:  rgb(255, 20, 147);
+    color: rgb(57,62,70);
+  }
+  #contactinfo {
+    display: none;
+  }
+  .section{ 
+    margin-left:0px;
+    margin-right:0px;
+  }
+  .title{
+    color:rgb(255, 20, 147);
+    font-size: 65px;
+    font-weight: bold;
+    padding: 70px 0px 30px 0px;   
+    margin-top:10px;
+  }
+  .sectionsubtitle{
+    font-size: 30px;
+    padding:15px;
+  }
+  #aboutme p {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  #img-aboutme{
+    width: 200px;
+  }
+  .project-img{
+    width:330px;
+    height: 210px;
+  }
+    .projectfadein {
+    width:330px;
+    height: 210px;
+    margin: 10px;
+  }
+  .timelinecontainer{
+    margin: 40px;
+  }
+    .contactinfo2 h3{
+    color: rgb(57,62,70);
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .contactinfo2 a{
+    color: rgb(57,62,70);
+    font-size: 20px;
+    padding: 5px;;
+    text-decoration: none;
+  }
+  .contactinfo2 a:hover {
+    color: #0000FF;
+  }
+  .phoneemail2{
+    display:flex;
+    justify-content: center;
+  }
+  .contactinfo2 h3{
+    font-weight:bold;
+    font-size: 25px;
+    padding: 20px;
+  }
+  .contactinfo2 i{
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+  .starttitle{
+    font-size: 50px;
+  }
+  #startcontainer{
+    width: 330px;
+    height: 220px;
+    position: relative;
+  }
+  #sidenav {
+    height: 40px;
+    padding-top: 0px;
+  }
+  #sidenav a {
+    padding: 14px 10px;
+    font-size: 15px;
+  }
+  #contactinfo {
+    display: none;
+  }
+  .title{
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-top:10px;
+  }
+  #aboutme{
+    margin-top:10px;
+  }
+  .sectionsubtitle{
+    font-size: 30px;
+    padding:10px;
+  }
+  #aboutme p {
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+  }
+  #img-aboutme{
+    border-radius: 100px;
+    width: 200px;
+  }
+  .language{
+    display:flex;
+    justify-content: center;
+  }
+  .language h3{
+  font-weight: bold;
+  font-size: 15px;
+  }
+  .language img {
+    margin: 0px 5px;
+    width: 70px;
+  }
+  .projectfadein {
+      transition : all 200ms;
+  }
+  .project-img{
+    width:250px;
+    height: 130px;
+  }
+    .projectfadein {
+    width:250px;
+    height: 130px;
+    margin: 10px;
+  }
+    .projectfadein .caption {
+    margin-top: 30px;
+  }
+  .timeline:after {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+    top: 10px;
+    margin-left: -15px;
+  }
+  .timeline:before {
+    top: 10px;
+    margin-left: -1px;
+    height: 130%;
+  } 
+  .timeline-last:before {
+      content:"";
+      height: 0;
+  }
+  .timeline.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    transition : all 200ms;
+  } 
+  .timelinecard {
+    height: auto;
+    margin: 10px 10px 15px 30px;
+  }
+  .timelinecard:after {
+    margin-top: -10px;
+  }
+  .cardtitle{
+    padding: 10px;
+    font-size: 15px;
+    margin:0;
+  }
+  .cardtitle i{
+    font-size: 15px;
+    padding:0px;
+  }
+  .carddiscription{
+    display:none;
+  }
+  .contactinfo2 h3{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .contactinfo2 a{
+    font-size: 15px;
+    padding: 0px 5px;
+  }
+  .phoneemail2{
+    font-size: 15px;
+  }
+}
