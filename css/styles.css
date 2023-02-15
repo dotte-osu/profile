@@ -205,7 +205,7 @@
   font-weight: 900;
   font-size: 30px;
   color:rgb(85, 88, 92);
-  content: "\f2c5";
+  content: "";
   display: inline-block;
   text-align:center;
   width: 50px;
@@ -221,7 +221,13 @@
   -moz-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
   box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);;
 }
+.job:after {    
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  font-size: 30px;
+  content: "\f0b1";
 
+}
 
 .timeline.scrollin {
   opacity : 1;
