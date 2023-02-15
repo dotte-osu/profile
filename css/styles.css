@@ -185,71 +185,48 @@
   text-align: left;
 }
 
-  .timeline:before {
-   	content:"";
-  	width: 3px;
-  	height: 115%;
-  	background: rgb(238, 236, 236);
-  	left: 0;
-  	top: 0;
-    position: absolute;
-    margin-left: 24px;
-  }
-  .timeline-last:before {
-    content:"";
-  	height: 0;
-  }
-  .timeline:after { 
-    background-color: rgb(238, 236, 236);
-    font-family: "Font Awesome 5 Brands"; 
-    font-weight: 900;
-    font-size: 30px;
-    color:rgb(85, 88, 92);
-    content: "\f2c5";
-    display: inline-block;
-    text-align:center;
-		width: 50px;
-		height: 50px;
-    line-height:50px;
-		position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    margin-left: 0px;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);;
-  }
-  .freelance:after {    
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
-    font-size: 30px;
-    content: "\f0b1";
-    
-  }
-  .bank:after { 
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
-    font-size: 30px;
-    content: "\f19c";
-	}
-.legitscript:after { 
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
-    font-size: 30px;
-    content: "\f5b1";
-	}
-.nissin:after { 
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
-    font-size: 30px;
-    content: "\f2db";
-	}
-  .timeline.scrollin {
-    opacity : 1;
-    transform : translate(0, 0);
-    transition : all 500ms;
+.timeline:before {
+  content:"";
+  width: 3px;
+  height: 100%;
+  background: rgb(238, 236, 236);
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-left: 24px;
+}
+.timeline-last:before {
+  content:"";
+  height: 0;
+}
+.timeline:after { 
+  background-color: rgb(238, 236, 236);
+  font-family: "Font Awesome 5 Brands"; 
+  font-weight: 900;
+  font-size: 30px;
+  color:rgb(85, 88, 92);
+  content: "\f2c5";
+  display: inline-block;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  line-height:50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin-left: 0px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.75);;
+}
+
+
+.timeline.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+  transition : all 500ms;
 } 
 .timelinecard {
 	position: relative;
@@ -453,12 +430,12 @@
     width:250px;
     height: 130px;
   }
-    .projectfadein {
+  .projectfadein {
     width:250px;
     height: 130px;
     margin: 10px;
   }
-    .projectfadein .caption {
+  .projectfadein .caption {
     margin-top: 30px;
   }
   .timeline:after {
@@ -472,7 +449,7 @@
   .timeline:before {
     top: 10px;
     margin-left: -1px;
-    height: 130%;
+    height: 100%;
   } 
   .timeline-last:before {
       content:"";
