@@ -19,6 +19,9 @@
 #sidenav ul{
   list-style-type: none;
 }
+
+
+
 #sidenav a {
   display: block;
   text-decoration: none;
@@ -89,7 +92,6 @@
   padding: 30px;
 }
 .sectionsubtitle{
-  font-family: 'Baloo Paaji', cursive;
   font-size: 45px;
   font-weight: bold;
   color:rgb(57,62,70);
@@ -111,6 +113,7 @@
 
  /* for skills section */
 .language{
+  width: 100%;
   display:flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -118,7 +121,7 @@
 }
 .language img {
   margin: 0px 20px;
-  width: 120px;
+  width: 100px;
 }
 
 .project-display{
@@ -303,24 +306,26 @@
   #sidenav {
     overflow: hidden;
     background-color:  rgb(255, 20, 147);
-    height: 50px;
+    height: 70px;
     width: 100%;
     padding-top: 0px;
   }
   #sidenav a {
-    float: left;
-    color: rgb(57,62,70);
-    text-align: center;
     text-decoration: none;
     padding: 0px 30px 30px 0;
     font-size: 17px;
     font-weight:bold;
   }
-
-  #sidenav a.active {
-    background-color:  rgb(255, 20, 147);
-    color: rgb(57,62,70);
+  #sidenav ul {
+    width: 50%;
+    display: table;
   }
+  
+  #sidenav ul li {
+    display: table-cell;
+    width: auto;
+  }
+  
   #contactinfo {
     display: none;
   }
@@ -397,13 +402,13 @@
     position: relative;
   }
   #sidenav {
-    height: 40px;
+    height: 75px;
     padding-top: 0px;
   }
   #sidenav a {
-    padding: 14px 10px;
-    font-size: 15px;
+    font-size: 13px;
   }
+
   #contactinfo {
     display: none;
   }
@@ -493,9 +498,6 @@
   .cardtitle i{
     font-size: 15px;
     padding:0px;
-  }
-  .carddiscription{
-    display:none;
   }
   .contactinfo2 h3{
     margin-top: 10px;
